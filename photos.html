@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Photos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body.photos-page {
+            background-image: url('images/photos_background.jpg'); /* ඔබේ රූපයේ නම සහ path එක */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="photos-page">
+    <div class="container content-container">
+        <a href="home.html" class="back-button">← Back to Home</a>
+        <h1>අපේ ලස්සන මතකයන්</h1>
+        <p>මතකයන් අතරට පිවිසෙමු...</p>
+        
+        <div class="image-gallery">
+            <img src="images/photo1.jpg" alt="Our Photo 1">
+            <img src="images/photo2.jpg" alt="Our Photo 2">
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
