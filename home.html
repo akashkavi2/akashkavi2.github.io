@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Place</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ඔබට අවශ්‍ය Background image මෙතනට දාන්න */
+        body.home-page {
+            background-image: url('images/home_background.jpg'); /* ඔබේ රූපයේ නම සහ path එක */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* අකුරු පැහැය පෙනෙන ලෙස සකසන්න */
+        }
+    </style>
+</head>
+<body class="home-page">
+    <div class="container home-container">
+        <h1 class="fade-in">Welcome to Our World, My Love!</h1>
+        <p class="fade-in delay-1">මේ අපේ ලස්සන මතකයන් පිරිච්ච තැන...</p>
+
+        <div class="category-grid">
+            <a href="photos.html" class="category-item fade-in delay-2">
+                <div class="icon">📸</div>
+                <h2>Photos</h2>
+                <p>අපේ ලස්සන මතකයන්</p>
+            </a>
+            <a href="videos.html" class="category-item fade-in delay-3">
+                <div class="icon">🎬</div>
+                <h2>Videos</h2>
+                <p>මතකයන් චලනය වන අයුරු</p>
+            </a>
+            <a href="messages.html" class="category-item fade-in delay-4">
+                <div class="icon">💌</div>
+                <h2>Messages</h2>
+                <p>ඔබට කියන්නට දේවල්</p>
+            </a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
