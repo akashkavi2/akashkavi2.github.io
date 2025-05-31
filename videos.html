@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ඔබට අවශ්‍ය Background image මෙතනට දාන්න */
+        body.videos-page {
+            background-image: url('images/videos_background.jpg'); /* ඔබේ රූපයේ නම සහ path එක */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* අකුරු පැහැය පෙනෙන ලෙස සකසන්න */
+        }
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* වීඩියෝ සඳහා විශාල ප්‍රමාණය */
+            gap: 20px;
+            padding: 20px;
+            justify-content: center; /* මධ්‍යයට කිරීමට */
+        }
+        .video-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* වීඩියෝව කොටුවෙන් පිටතට නොයන ලෙස */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            text-align: center; /* වීඩියෝ මාතෘකා මධ්‍යයට කිරීමට */
+            padding-bottom: 15px;
+        }
+        .video-item:hover {
+            transform: scale(1.03);
+        }
+        .video-item video {
+            width: 100%;
+            height: 250px; /* වීඩියෝ වල උස පාලනය කිරීමට */
+            object-fit: cover; /* වීඩියෝව කොටුවට ගැලපෙන ලෙස */
+            display: block; /* පහළ ඇති හිඩස ඉවත් කිරීමට */
+        }
+        .video-item h3 {
+            margin-top: 15px;
+            font-size: 1.3em;
+            color: #ff69b4; /* මාතෘකා සඳහා රෝස පැහැය */
+        }
+        .video-item p {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body class="videos-page">
+    <div class="container content-container">
+        <a href="home.html" class="back-button">← Back to Home</a>
+        <h1>මතකයන් චලනය වන අයුරු</h1>
+        <p>අපේ ලස්සනම වීඩියෝ එකතුව...</p>
+        
+        <div class="video-gallery">
+            <div class="video-item">
+                <video controls src="videos/video1.mp4">
+                    ඔබගේ browser එක වීඩියෝ ප්ලේ කිරීමට සහය නොදක්වයි.
+                </video>
+                <h3>අපේ පළමු ගමන</h3>
+                <p>මේ අපේ පළමු ගමන, ගොඩක් විනෝද වුනා!</p>
+            </div>
+            
+            <div class="video-item">
+                <video controls src="videos/video2.mp4">
+                    ඔබගේ browser එක වීඩියෝ ප්ලේ කිරීමට සහය නොදක්වයි.
+                </video>
+                <h3>සුබ උපන්දිනයක් කවි!</h3>
+                <p>ඔබගේ උපන්දිනය දා ගත් වීඩියෝවක්...</p>
+            </div>
+
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
