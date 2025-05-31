@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorMessage = document.getElementById('errorMessage');
 
     // Replace 'kavi' with the actual secret code you want
-    const correctSecretCode = 'kavi'; // Change this to your desired secret code!
+        const correctSecretCode = '20050729'; // Change this to your desired secret code!
 
     if (enterButton && secretCodeInput && errorMessage) {
         enterButton.addEventListener('click', () => {
