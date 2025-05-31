@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages for Kavi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ඔබට අවශ්‍ය Background image මෙතනට දාන්න */
+        body.messages-page {
+            background-image: url('images/messages_background.jpg'); /* ඔබේ රූපයේ නම සහ path එක */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* අකුරු පැහැය පෙනෙන ලෙස සකසන්න */
+        }
+        .messages-container {
+            padding: 20px;
+        }
+        .message-card {
+            background-color: rgba(255, 255, 255, 0.1); /* තරමක් විනිවිද පෙනෙන */
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .message-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .message-card h2 {
+            color: #ff69b4; /* මාතෘකා සඳහා රෝස පැහැය */
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .message-card p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .message-date {
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: right;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body class="messages-page">
+    <div class="container content-container">
+        <a href="home.html" class="back-button">← Back to Home</a>
+        <h1>ඔබට කියන්නට දේවල්</h1>
+        <p>කවි, මගේ හිතේ තියෙන දේවල් මේවා...</p>
+        
+        <div class="messages-container">
+            <div class="message-card">
+                <h2>ඔබ මගේ ලෝකයයි</h2>
+                <p>කවි, ඔයා මගේ ජීවිතයට ආපු දවසෙ ඉඳන් මගේ ලෝකයම ලස්සන වුනා. ඔයාගේ හිනාව මගේ හිත සතුටින් පුරවනවා. මම ඔයාට ගොඩක් ආදරෙයි!</p>
+                <div class="message-date">May 31, 2025</div>
+            </div>
+            
+            <div class="message-card">
+                <h2>ඔබ නිසා මම වඩා හොඳ පුද්ගලයෙක්</h2>
+                <p>ඔයා මට හයියක්, මගේ හැම දේටම. ඔයා නිසා මම හැමදාම හොඳ පුද්ගලයෙක් වෙන්න උත්සාහ කරනවා. ඔයාට බොහොම ස්තූතියි.</p>
+                <div class="message-date">May 29, 2025</div>
+            </div>
+
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
